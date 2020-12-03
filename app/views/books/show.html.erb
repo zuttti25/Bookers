@@ -1,6 +1,9 @@
-
-
-<%= @book.title %>
-<%= @book.body %>
+<div class = "bookers">
+<p id="notice">
+ <%= notice %>
+</p>
+ Title : <%= @book.title %>
+  Body : <%= @book.body %>
 <%= link_to 'Edit', edit_book_path(@book.id) %>
 <%= link_to 'Back', new_book_path %>
+</div>
